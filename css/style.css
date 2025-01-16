@@ -14,7 +14,6 @@ p {
   color: var(--main-color);
   font-family: "Castoro Titling", serif;
   font-weight: 500;
-  
 }
 a {
   text-decoration: none;
@@ -169,39 +168,71 @@ a {
   opacity: 1;
 }
 
+.img-h1 {
+  background-image: url(../img/tanker-cargo-ship.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+  transition: filter 1s;
+  background-repeat: no-repeat;
+}
+.img-h2 {
+  background-image: url(../img/efitransa-11-1.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+  transition: filter 1s;
+  background-repeat: no-repeat;
+}
+.img-h3 {
+  background-image: url(../img/The-Evolution-and-Importance-of-Airfreight-and-Air-Cargo-in-the-Global-Economy.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+  transition: filter 1s;
+  background-repeat: no-repeat;
+}
+
 /* & end   Navbar     style */
 
 /* & start   About     style */
 
-#about .about-img{
+#about .about-img {
   transition: all 0.3s 0.3s ease-in-out;
 }
-  #about .about-img:hover{
-    filter: brightness(50%) saturate(100%);
-    box-shadow: 0px 0px 0px rgba(0,0,0,0.2);
-    transform: scale(0.9);
-   
-  }
-
+#about .about-img:hover {
+  filter: brightness(50%) saturate(100%);
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+  transform: scale(0.9);
+}
 
 /* & end   About       style */
 
-
 /* & start   services     style */
 .btn-services {
-  font-size: 1.2rem;
-  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  padding: 1rem;
   border: none;
   outline: none;
   border-radius: 0.4rem;
   cursor: pointer;
-  text-transform: uppercase;
-  background: linear-gradient(45deg, #0ce39a, #69007f, #fc0987);
-  color: rgb(234, 234, 234);
-  font-weight: 700;
-  transition: 0.6s;
-  box-shadow: 0px 0px 60px #1f4c65;
-  -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+  &:active {
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #0ce39a, #69007f, #fc0987);
+    color: rgb(234, 234, 234);
+    font-weight: 700;
+    transition: 0.6s;
+    box-shadow: 0px 0px 60px #1f4c65;
+    -webkit-box-reflect: below 10px
+      linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+    width: 80%;
+  }
 }
 
 .btn-services:active {
@@ -209,8 +240,12 @@ a {
 }
 
 .btn-services:hover {
-  background: rgb(2,29,78);
-  background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
+  background: rgb(2, 29, 78);
+  background: linear-gradient(
+    270deg,
+    rgba(2, 29, 78, 0.681) 0%,
+    rgba(31, 215, 232, 0.873) 60%
+  );
   color: rgb(4, 4, 38);
 }
 .service-item {
@@ -219,41 +254,44 @@ a {
 
 .service-item:hover {
   transform: scale(1.1);
-  box-shadow: inset 4px 4px 12px rgba(0, 0, 0, 0.562), inset -4px -4px 12px rgba(0, 0 ,0, 0.384);
+  box-shadow: inset 4px 4px 12px rgba(0, 0, 0, 0.562),
+    inset -4px -4px 12px rgba(0, 0, 0, 0.384);
   transform: translateY(-10px);
   border-radius: 10px;
-  background: linear-gradient(45deg, #0ce39bc4, rgba(106, 0, 127, 0.719), rgb(252, 9, 135));
+  background: linear-gradient(
+    45deg,
+    #0ce39bc4,
+    rgba(106, 0, 127, 0.719),
+    rgb(252, 9, 135)
+  );
   color: #fff;
-  -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+  -webkit-box-reflect: below 10px
+    linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
   animation: pop 4s 0.5s linear infinite;
-  h4{
+  h4 {
     color: #fff;
   }
-
 }
-@keyframes pop  {
+@keyframes pop {
   0% {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
   }
   20% {
-    transform: translateX(-10px);
+    transform: translateX(-5px);
   }
   40% {
-    transform: translateY(10px);
+    transform: translateY(5px);
   }
   60% {
-    transform: translateX(10px);
+    transform: translateX(5px);
   }
   80% {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
   }
- 100% {
-    transform: translateX(-10px);
+  100% {
+    transform: translateX(-5px);
   }
- 
 }
-
-
 
 /* & End   services     style */
 
@@ -270,16 +308,15 @@ a {
   box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
 }
 
-
 .button-price:active {
   color: #666;
- 
 }
-.price-item{ box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;}
- /* & PRICE   BOTTON  style */
+.price-item {
+  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
+/* & PRICE   BOTTON  style */
 
-
- /* &  Our-Team  link style */
+/* &  Our-Team  link style */
 .parent {
   width: 100%;
   height: 100%;
@@ -320,56 +357,52 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translate3d(0px, 0px, 15px) perspective(180px) rotateX(-35deg) translateY(2px);
+  transform: translate3d(0px, 0px, 15px) perspective(180px) rotateX(-35deg)
+    translateY(2px);
   border-radius: 50%;
 }
- /* &  Our-Team  link style */
+/* &  Our-Team  link style */
 
- /*& Start clent Slider SECTION*/
-.slider .item{
-  img{
-      width: 8rem;
-      height: 9rem;
-      object-fit: cover;
-      
+/*& Start clent Slider SECTION*/
+.slider .item {
+  img {
+    width: 8rem;
+    height: 9rem;
+    object-fit: cover;
   }
-  h3{
-      &:after{
-          content: "";
-          height: 3px;
-          width: 10%;
-          position: absolute;
-          bottom: 0;
-          left: 50%;
-          transform: translateX(-50%);
-      }
+  h3 {
+    &:after {
+      content: "";
+      height: 3px;
+      width: 10%;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 }
 
-
-.slider .carousel-indicators [data-bs-target]{
+.slider .carousel-indicators [data-bs-target] {
   width: 7rem;
   height: 7rem;
   border-radius: 50%;
   text-indent: 0;
-
 }
 
-
-.slider .container{
-  .img-leIndicators{
-         img{
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          border-radius: 50%;
-         }
-          
-      }
+.slider .container {
+  .img-leIndicators {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+    }
   }
+}
 
 /*&  End clent  Slider SECTION*/
-#footer a{
+#footer a {
   text-decoration: none;
   color: #fff;
 }
